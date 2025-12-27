@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inquiry</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<main>
+    <div class="container inquire-container">
+        <div class="inquire-form-wrapper">
+            <h1>Request a Call Back</h1>
 
+            <p class="form-desc">
+                Please fill out the details below and our representative will reach out to you shortly
+                to assist with your purchase.
+            </p>
 
-    <main>
-        <div class="container inquire-container">
-            <div class="inquire-form-wrapper">
-                <h1>Request a Call Back</h1>
-                <p class="form-desc">Please fill out the details below and our representative will reach out to you
-                    shortly to assist with your purchase.</p>
-                <br>
-                <form action="success.html" class="inquire-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">International Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <button type="submit" class="btn-primary btn-submit">Submit Request</button>
-                </form>
-            </div>
+            <form action="success.html" class="inquire-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">International Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">
+                    Submit Request
+                </button>
+            </form>
         </div>
-    </main>
-
+    </div>
+</main>
 </body>
-
 </html>
