@@ -2,13 +2,9 @@
     --primary-gold: #D4AF37;
     --secondary-gold: #C5A028;
     --text-black: #F5F5F5;
-    /* Swapped to light for dark mode */
     --text-grey: #AAAAAA;
-    /* Lighter grey for visibility */
     --white: #181818;
-    /* Softer Charcoal Dark */
     --light-bg: #222222;
-    /* Lighter Charcoal */
     --border-color: #333333;
     --font-serif: 'Times New Roman', serif;
     --font-sans: 'Lato', sans-serif;
@@ -49,23 +45,18 @@ ul {
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--font-serif);
     font-weight: 700;
 }
 
 .btn-text {
     font-weight: 700;
-    color: var(--text-black);
     font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
 }
-
 
 .btn-primary {
     display: inline-block;
@@ -77,82 +68,14 @@ h4 {
     letter-spacing: 1px;
     margin-top: 20px;
     border: 1px solid var(--primary-gold);
-    transition: all 0.3s ease;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-
-
-
-
-/* Top Banner */
-.top-banner {
-    background-color: var(--white);
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.banner-content {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-@media (max-width: 768px) {
-    .hidden-mobile {
-        display: none;
-    }
-
-    .footer-col {
-        text-align: center;
-        min-width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .inquire-container {
-        padding: 30px 20px;
-    }
-}
-
-/* Header */
-header {
-    padding: 20px 0;
-}
-
-.logo-small {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
     padding: 60px 0;
     text-align: center;
-}
-
-.hero-logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero-logo {
-    width: 200px;
-    /* Adjust size as needed */
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    /* Optional: if the logo is circular */
 }
 
 .brand-name {
@@ -170,17 +93,15 @@ header {
     letter-spacing: 4px;
 }
 
-/* Vision Section */
+/* Vision */
 .vision-section {
     padding: 80px 0;
     text-align: center;
-    background-color: var(--white);
 }
 
 .vision-section h2 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: var(--text-black);
 }
 
 .vision-section p {
@@ -188,66 +109,24 @@ header {
     max-width: 800px;
     margin: 0 auto;
     color: var(--text-grey);
-    line-height: 1.6;
 }
 
-/* Products Section */
+/* Products */
 .products-section {
     padding: 60px 0;
-    background-color: var(--white);
-    /* Very light grey background for contrast */
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 40px;
-    border: 1px solid var(--primary-gold);
-    /* The blue border in screenshot replaced with gold/theme */
-    background: var(--white);
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section-header h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-style: italic;
-    color: var(--text-black);
-}
-
-.section-desc {
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--text-grey);
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    padding: 0 20px;
 }
-
-.product-card {
-    background: transparent;
-    text-align: left;
-    transition: transform 0.3s ease;
-    display: block;
-    /* Make the whole card clickable if wrapped in anchor or just div */
-}
-
 
 .product-image {
-    width: 100%;
     height: 350px;
     background-color: #2a2a2a;
     margin-bottom: 20px;
     overflow: hidden;
-    position: relative;
-    /* Simulate the frame feel */
 }
 
 .product-image img {
@@ -264,11 +143,10 @@ header {
 .product-details p {
     color: var(--text-grey);
     font-size: 0.95rem;
-    margin-bottom: 15px;
     line-height: 1.5;
 }
 
-/* --- PRODUCT DETAIL PAGE STYLES --- */
+/* Product Detail */
 .product-detail-container {
     padding: 60px 20px;
     display: grid;
@@ -279,20 +157,16 @@ header {
 
 .detail-image {
     width: 100%;
-    height: auto;
     max-height: 600px;
     object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .detail-info h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: var(--text-black);
 }
 
 .sub-title {
-    font-family: var(--font-sans);
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--primary-gold);
@@ -306,36 +180,15 @@ header {
     margin-bottom: 40px;
 }
 
-.notes-section {
-    margin-top: 40px;
-    background-color: var(--light-bg);
-    padding: 30px;
-    border-left: 2px solid var(--primary-gold);
-}
-
 .notes-title {
-    font-family: var(--font-serif);
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--text-black);
 }
 
 .notes-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-}
-
-.note-item h4 {
-    font-size: 1rem;
-    color: var(--primary-gold);
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.note-item p {
-    font-size: 0.9rem;
-    color: var(--text-grey);
 }
 
 @media (max-width: 900px) {
@@ -346,13 +199,9 @@ header {
 
 /* Footer */
 footer {
-    background-color: #111111;
+    background-color: #111;
     padding-top: 60px;
     border-top: 1px solid var(--border-color);
-}
-
-.footer-content {
-    margin-bottom: 40px;
 }
 
 .footer-columns {
@@ -363,7 +212,6 @@ footer {
 }
 
 .footer-col {
-    flex: 1;
     min-width: 200px;
     text-align: right;
 }
@@ -371,9 +219,7 @@ footer {
 .footer-col h4 {
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     margin-bottom: 25px;
-    color: var(--text-black);
 }
 
 .footer-col ul li {
@@ -382,32 +228,9 @@ footer {
 
 .footer-col ul li a {
     color: var(--text-grey);
-    font-size: 0.95rem;
 }
 
-
-.see-all {
-    font-weight: 600;
-    color: var(--text-black) !important;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    justify-content: flex-end;
-}
-
-.footer-bottom {
-    background-color: #111111;
-    padding: 20px 0;
-    color: var(--text-grey);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border-color);
-}
-
-/* Form Styles */
+/* Form */
 .inquire-container {
     padding: 60px 0;
     display: flex;
@@ -415,7 +238,6 @@ footer {
 }
 
 .inquire-form-wrapper {
-    width: 100%;
     max-width: 600px;
     background-color: var(--light-bg);
     padding: 40px;
@@ -427,8 +249,8 @@ footer {
 }
 
 .form-group label {
-    display: block;
     margin-bottom: 5px;
+    display: block;
     color: var(--primary-gold);
     font-weight: 600;
 }
@@ -439,9 +261,6 @@ footer {
     background-color: var(--white);
     border: 1px solid var(--border-color);
     color: var(--text-black);
-    font-family: var(--font-sans);
-    outline: none;
-    transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
